@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float 2.0 - Funiro Furniture Store</title>
+    <!-- Google Font - Open Sans (Regular & SemiBold & Bold) -->
+    <!-- font-family: 'Open Sans', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- My CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="top-page stretch">
+        <div class="header-container">
+            <h1 class="main-heading"><a href="#">#FuniroFurniture</a></h1>            
+            <form class="search-form" action="#">
+                <input class="search-submit-button" type="submit" name="search-submit" value="">
+                <!-- Залишив пустим value="", щоб вставити іконку. Це помилка? Валідатор мовчить про це. -->
+                <input class="search-input" type="search" name="search-text-input" placeholder="Search for minimalist chair">
+            </form>
+            <!-- Clearing the float -->
+            <div class="clearfix"></div>
+        </div>
+    </header>
+    <!-- Content -->
+    <div class="content-container">
+        <div class="products">
+            <!-- Product 1 -->
+            <div class="product-item">
+                <!-- Image -->
+                <div class="product-graphics">
+                    <a class="image-link" href="#">
+                        <img class="product-image" src="img/products/product-1.png" alt="Luxury big sofa">
+                        <span class="promo-cards sale-card">-50%</span>
+                    </a>
+                </div>
+                <!-- Description -->
+                <div class="product-text">
+                    <a class="text-link" href="#">
+                        <span class="product-name">Lolito</span>
+                        <span class="product-description">Luxury big sofa</span>
+                        <span class="product-price price-reduction">Rp 7.000.000</span>
+                    </a>
+                </div>
+            
+                <!-- Нащо вставляти span в div (мова про span картки -50%), якщо можна зробити його display:block? Взагалі, тут position: absolute;, то не роумію навіщо робити тут div. -->
+                
+                <!-- Намагався вставити span в div, але виникло більше проблем, ніж просто з використанням двох класів із span'ом. -->
+
+                <!-- Promo card - SALE -->
+                <!-- <span class="promo-cards sale-card">-50%</span> -->
+
+                <!-- Спочатку картка була розташована тут, але переніс її до посилання <a> вгорі, аби картка також виділялася. Щоб не переносити весь коментар з запитанням про span, залишив все тут.  -->
+            </div>
+            <!-- Product 2 -->
+            <div class="product-item">
+                <!-- Image -->
+                <div class="product-graphics">
+                    <a class="image-link" href="#">
+                        <img class="product-image" src="img/products/product-2.png" alt="Minimalist fan">
+                        <!-- Promo card - NEW -->
+                        <span class="promo-cards new-card">New</span>
+                    </a>
+                </div>
+                <!-- Description -->
+                <div class="product-text">
+                    <a class="text-link" href="#">
+                        <span class="product-name">Respira</span>
+                        <span class="product-description">Minimalist fan</span>
+                        <span class="product-price">Rp 500.000</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-item">
+                <!-- Image -->
+                <div class="product-graphics">
+                    <a class="image-link" href="#">
+                        <img class="product-image" src="img/products/product-3.png" alt="Cute bed set">
+                    </a>
+                </div>
+                <!-- Description -->
+                <div class="product-text">
+                    <a class="text-link" href="#">
+                        <span class="product-name">Pingky</span>
+                        <span class="product-description">Cute bed set</span>
+                        <span class="product-price price-reduction">Rp 7.000.000</span>
+                    </a>
+                </div>
+
+            </div>
+            <!-- Product 4 -->
+            <div class="product-item">
+                <!-- Image -->
+                <div class="product-graphics">
+                    <a class="image-link" href="#">
+                        <img class="product-image" src="img/products/product-4.png" alt="Minimalist fan">
+                        <!-- Promo card - STAR -->
+                        <span class="promo-cards star-card"></span>
+                    </a>
+                </div>
+                <!-- Description -->
+                <div class="product-text">
+                    <a class="text-link" href="#">
+                        <span class="product-name">Respira</span>
+                        <span class="product-description">Minimalist fan</span>
+                        <span class="product-price">Rp 500.000</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-item">
+                <!-- Image -->
+                <div class="product-graphics">
+                    <a class="image-link" href="#">
+                        <img class="product-image" src="img/products/product-5.png" alt="Luxury big sofa">
+                        <!-- Promo card - NEW -->
+                        <span class="promo-cards new-card">New</span>
+                    </a>
+                </div>
+                <!-- Description -->
+                <div class="product-text">
+                    <a class="text-link" href="#">
+                        <span class="product-name">Lolito</span>
+                        <span class="product-description">Luxury big sofa</span>
+                        <span class="product-price price-reduction">Rp 7.000.000</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Clearing the float -->
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bottom-page stretch">
+        <div class="footer-container">
+            <nav class="website-navigation">
+                <ul>
+                    <li><a class="footer-link" href="#" target="_blank">home</a></li>
+                    <li><a class="footer-link" href="#" target="_blank">about us</a></li>
+                    <li><a class="footer-link" href="#" target="_blank">products</a></li>
+                    <li><a class="footer-link" href="#" target="_blank">contacts</a></li>
+                    <li><span class="copyrights">Copyrights 2021</span></li>
+                </ul>
+                <!-- Clearing the float -->
+                <div class="clearfix"></div>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
